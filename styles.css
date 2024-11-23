@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: black;
     color: #333;
 }
 
@@ -31,10 +31,7 @@ h1 {
     width: 180PX;
     height: 90PX;
     border-radius: 8px;
-    border: 3px groove #f0f0f0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-                0 4px 6px rgba(0, 0, 0, 0.1),
-                0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -42,3 +39,25 @@ h1 {
 .gallery-container img:hover {
     transform: scale(1.05);
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px; /* Adjust gap between items */
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-decoration: none;
+}
+
+img, video {
+    display: block;
+    width: 150px; /* Adjust width to match your gallery layout */
+    height: auto;
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 4px; /* Optional: Add rounded corners */
+}
+
