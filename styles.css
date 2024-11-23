@@ -28,8 +28,8 @@ h1 {
 
 /* Gallery items */
 .gallery-container img {
-    width: 100%;
-    height: 60%;
+    width: 180PX;
+    height: 90PX;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
