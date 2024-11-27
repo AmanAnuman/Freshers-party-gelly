@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 0;
+    background-color: black;
+    color: #333;
+}
+
+header {
+    background: transparent;
+    color: white;
+    padding: 0px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: transparent;
+    background-size: 300% 300%;
+    background-clip: text;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Gallery container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Gallery items */
+.gallery-container img {
+    width: 180PX;
+    height: 90PX;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: transform 0.2s;
+}
+
+.gallery-container img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px; /* Adjust gap between items */
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-decoration: none;
+}
+
+img, video {
+    display: block;
+    width: 150px; /* Adjust width to match your gallery layout */
+    height: 300px;
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+video {
+    margin-left: 30px; 
+    filter: grayscale(100%);
+}
+
+video:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1)
+}
+
